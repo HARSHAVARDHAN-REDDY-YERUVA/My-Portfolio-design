@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+background: url(images/grad.jpg) no-repeat;
+background-size: 150%;
+opacity: 0.9;
+font-family: Comic Sans MS;
+color: black;
+}
+</style>
+<body>
+<form name="email" method="post" action="sendmail.php">
+  <font size=6><b>First name:</b></font>&nbsp;&nbsp; 
+  <input type="text" name="firstname" value="">
+  <br><br>
+  <font size=6><b>Last name:</b></font>&nbsp;&nbsp;&nbsp;
+  <input type="text" name="lastname" value="">
+  <br><br>
+  <font size=6><b>Email Id:</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="email" name="email_id" value=""> 
+  <br><br>
+  <font size=6><b>Subject:</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea rows="2" cols="50" name="subject"></textarea>
+  <br><br>
+  <font size=6><b>Message:</b></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea rows="10" cols="50" name="message">
+  </textarea>
+  <br><br>
+  <font size=6><b>Attachments:</b></font>
+  <input type="file" name="enclosures">
+  <br><br><br>
+  <input type="submit" value="Send Email">
+</form>
+</body>
+</html>
